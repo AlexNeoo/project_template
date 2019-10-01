@@ -1,5 +1,9 @@
 #!groovy
 // Run docker build
+agent { 	
+        label 'master'	
+        }
+
 properties([disableConcurrentBuilds()])
 
 pipeline {
